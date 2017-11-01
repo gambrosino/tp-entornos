@@ -14,4 +14,9 @@ class Attendant extends Model
     		->withPivot('code')
     		->withTimestamps();
     }
+
+    public function likes()
+    {
+    	return $this->hasMany(Like::class);
+    }
 }

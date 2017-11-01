@@ -17,4 +17,9 @@ class Event extends Model
     {
     	return $this->belongsToMany(Attendant::class);
     }
+
+    public function likes()
+    {
+    	return $this->hasMany(Like::class);
+    }
 }
