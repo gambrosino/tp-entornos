@@ -3,10 +3,23 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Event extends Model
 {
-    protected $fillable = ['name', 'description', 'owner'];
+    protected $fillable = [
+        'name',
+        'description',
+        'owner',
+        'description',
+        'place',
+        'address',
+        'date_time'];
+
+    public function getDateTimeAttribute($value)
+    {
+        return Carbon::parse($value);
+    }
 
     public function owner()
     {

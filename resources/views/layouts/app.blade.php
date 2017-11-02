@@ -33,7 +33,7 @@
             </div>
             <div class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item is-active" href="#">
+                    <a class="navbar-item is-active" href="{{ route('events') }}">
                         Eventos
                     </a>
                 </div>
