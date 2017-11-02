@@ -8,16 +8,16 @@
                         ¡El mejor lugar para publicar eventos!
                     </h1>
                     <h2 class="subtitle">
-                        Facilitamos la gestión de eventos, brindando toda la información necesaria a los organizadores 
-                        y un registro sencillo a su audiencia. 
+                        Facilitamos la gestión de eventos, brindando toda la información necesaria a los organizadores
+                        y un registro sencillo a su audiencia.
                     </h2>
                     <p>
-                        Difundir un evento es muy sencillo, solamente debe crearlo y nosotros nos encargamos de difundirlo en 
-                        sus redes sociales, inscribir a los interesados y enviarles recordatorios. 
+                        Difundir un evento es muy sencillo, solamente debe crearlo y nosotros nos encargamos de difundirlo en
+                        sus redes sociales, inscribir a los interesados y enviarles recordatorios.
                     </p>
                     <p>
                         Además siempre contará con información actualizada sobre la concurrencia a su evento, podrá manejar cupos
-                        de audiencia, listas de espera, enviar mensajes a los participantes, ¡y mucho más! 
+                        de audiencia, listas de espera, enviar mensajes a los participantes, ¡y mucho más!
                     </p><br>
 
                     <a href="#" class="button is-primary is-medium">Registrarse</a>
@@ -37,7 +37,7 @@
                         </p>
                     </figure>
                     <div class="media-content">
-                        <div class="content">                        
+                        <div class="content">
                             <nav class="level is-mobile">
                                 <div class="level-item has-text-centered">
                                     <div>
@@ -61,12 +61,12 @@
                             <p>
                                 <strong>Evento 3</strong>
                                 <br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem.
                             </p>
                         </div>
                     </div>
-                </article>                
-                
+                </article>
+
                 <article class="media">
                     <figure class="media-left is-hidden-mobile">
                         <p class="image is-128x128">
@@ -74,7 +74,7 @@
                         </p>
                     </figure>
                     <div class="media-content">
-                        <div class="content">                        
+                        <div class="content">
                             <nav class="level is-mobile">
                                 <div class="level-item has-text-centered">
                                     <div>
