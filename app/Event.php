@@ -21,6 +21,16 @@ class Event extends Model
         return Carbon::parse($value);
     }
 
+    public function getAttendantsCount()
+    {
+        return $this->attendants()->count();
+    }
+
+    public function getLikesCount()
+    {
+        return $this->likes()->count();
+    }
+
     public function owner()
     {
     	return $this->belongsTo(User::class, 'owner', 'id');

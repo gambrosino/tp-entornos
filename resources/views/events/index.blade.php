@@ -35,7 +35,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="">
+                            <a href="{{ route('events.show', ['event' => $event->id]) }}">
 	                            <h4>
 	                                {{ $event->name }}
 								</h4>
