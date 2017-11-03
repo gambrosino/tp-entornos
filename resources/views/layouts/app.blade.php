@@ -43,7 +43,7 @@
                             <span class="icon">
                                 <i class="fa fa-sign-in"></i>
                             </span>
-                            <span>Ingresar</span> 
+                            <span>Ingresar</span>
                         </a>
                     </div>
                 </div>
@@ -51,18 +51,22 @@
         </nav>
 
         @yield('content')
+
     </div>
-    
+
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    <strong>Evnts</strong> desarrollado por <a href="http://github.com/gambrosino" target="_blank">Guido Ambrosino</a> para la cátedra Entornos Gráficos - UTN FRRo - Año 2017 
+                    <strong>Evnts</strong> desarrollado por <a href="http://github.com/gambrosino" target="_blank">Guido Ambrosino</a> para la cátedra Entornos Gráficos - UTN FRRo - Año 2017
                 </p>
             </div>
         </div>
     </footer>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+
+    @yield('js-import')
+
 </body>
 </html>

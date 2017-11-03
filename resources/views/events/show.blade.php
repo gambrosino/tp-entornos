@@ -71,7 +71,7 @@
                         <span class="tag is-dark">Rosario</span>
                       </div>
                       <br>
-                      <a href="#" class="button is-primary is-medium">¡Quiero asistir!</a>
+                      <a href="#" class="button is-primary is-medium registerButton">¡Quiero asistir!</a>
                     </div>
                   </div>
                 </div>
@@ -79,5 +79,5 @@
         </section>
         <br />
 		    {{-- Comments --}}
-        {{-- Modal Register --}}
+        @include('events.partials.register')
 @endsection
