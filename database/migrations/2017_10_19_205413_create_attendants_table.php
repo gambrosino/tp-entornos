@@ -16,6 +16,7 @@ class CreateAttendantsTable extends Migration
         Schema::create('attendants', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('dni')->unique();
             $table->string('email')->unique();
             $table->timestamps();
         });
