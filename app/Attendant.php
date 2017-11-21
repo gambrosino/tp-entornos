@@ -6,7 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Attendant extends Model
 {
-    protected $fillable = ['name', 'email'];
+    protected $fillable = ['name', 'dni','email'];
+
+    public function registerTo(Event $event)
+    {
+        $this->load('events');
+        if (!$this->events->contains($event)) {
+            $this->events()->attach($event->id, ['code' => str_random(6)]);
+        }
+    }
 
     public function events()
     {

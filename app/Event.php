@@ -31,6 +31,12 @@ class Event extends Model
         return $this->likes()->count();
     }
 
+    public function hasRoom()
+    {
+        //TODO
+        return true;
+    }
+
     public function owner()
     {
     	return $this->belongsTo(User::class, 'owner', 'id');
