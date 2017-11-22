@@ -23,6 +23,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('admin.home');
+        $user = auth()->user();
+        $events = $user->events;
+        return view('admin.home', compact('events'));
     }
 }
