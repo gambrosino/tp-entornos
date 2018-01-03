@@ -17,6 +17,10 @@ Route::get('/', function () {
 
 Route::get('/eventos', 'EventController@index')->name('events');
 
+Route::get('/eventos/crear', 'EventController@create')->name('events.create');
+
+Route::post('/eventos/crear', 'EventController@store')->name('events.store');
+
 Route::get('/eventos/{event}', 'EventController@show')->name('events.show');
 
 Route::post('/attendants', 'AttendantController@store')->name('attendants.store');

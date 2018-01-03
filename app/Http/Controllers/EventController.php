@@ -18,4 +18,26 @@ class EventController extends Controller
     {
     	return view('events.show', compact('event'));
     }
+
+    public function create()
+    {
+    	return view('events.create');
+    }
+
+    public function store(Request $request)
+    {
+       $event = $request->validate([
+            'name' => 'required|string|max:50',
+            'place' => 'required|string|max:50',
+            'address' => 'required|string|max:50',
+            'date_time' => 'required|date',
+            'description' => 'required|string'
+       ]);
+
+       $event['owner'] = auth()->user()->id;
+
+       Event::create($event);
+
+       return redirect('home');
+    }
 }

@@ -12,7 +12,7 @@
 			        eventos anteriores y crear nuevos eventos.
 			    </h2>
 			    <br>
-			    <a href="#" class="button is-primary">+ Crear evento</a>
+			    <a href="{{ route('events.create') }}" class="button is-primary">+ Crear evento</a>
 			</div>
 		</div>
 	</section>
