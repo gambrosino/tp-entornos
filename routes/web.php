@@ -23,6 +23,8 @@ Route::post('/eventos/crear', 'EventController@store')->name('events.store');
 
 Route::get('/eventos/{event}', 'EventController@show')->name('events.show');
 
+Route::delete('/eventos/{event}', 'EventController@destroy')->name('events.destroy');
+
 Route::post('/attendants', 'AttendantController@store')->name('attendants.store');
 
 Auth::routes();

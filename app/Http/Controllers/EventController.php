@@ -14,8 +14,12 @@ class EventController extends Controller
     	return view('events.index', compact('events'));
     }
 
-    public function show(Event $event)
+    public function show(Event $event, Request $request)
     {
+        if ($request->ajax()) {
+            return response()->json($event);
+        }
+        
     	return view('events.show', compact('event'));
     }
 
@@ -39,5 +43,12 @@ class EventController extends Controller
        Event::create($event);
 
        return redirect('home');
+    }
+
+    public function destroy(Event $event)
+    {
+        Event::destroy($event->id);
+
+        return redirect()->back();
     }
 }

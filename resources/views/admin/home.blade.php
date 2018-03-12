@@ -32,7 +32,7 @@
 				</thead>
 				<tbody>
 				  	@forelse($events as $event)
-					    <tr>
+					    <tr data-id="{{ $event->id }}">
 							<td>{{ $event->date_time->format('d-m-Y') }}</td>
 							<td>
 								<a href="{{ route('events.show', ['event' => $event->id]) }}"
@@ -49,7 +49,7 @@
 									<a href="#" class="level-item button is-small is-outlined is-success">
 										Enviar emails
 									</a>
-									<a href="#" class="level-item button is-small is-danger">
+									<a href="#" class="level-item button is-small is-danger deleteButton">
 										Eliminar
 									</a>
 								</div>
@@ -82,4 +82,7 @@
 			</table>
 		</div>
 	</section>
+
+	@include('events.partials.delete')
+
 @endsection
