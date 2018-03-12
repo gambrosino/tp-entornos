@@ -19,13 +19,15 @@ class EventController extends Controller
         if ($request->ajax()) {
             return response()->json($event);
         }
-        
+
     	return view('events.show', compact('event'));
     }
 
     public function create()
     {
-    	return view('events.create');
+        $event = new Event();
+        
+    	return view('events.create', compact('event'));
     }
 
     public function store(Request $request)
@@ -43,6 +45,26 @@ class EventController extends Controller
        Event::create($event);
 
        return redirect('home');
+    }
+
+    public function edit(Event $event)
+    {
+        return view('events.edit', compact('event'));
+    }
+
+    public function update(Event $event, Request $request)
+    {
+        $event->update($request->validate([
+            'name' => 'required|string|max:50',
+            'place' => 'required|string|max:50',
+            'address' => 'required|string|max:50',
+            'date_time' => 'required|date',
+            'description' => 'required|string'
+        ]));
+
+        $event->save();
+
+        return redirect()->route('home');
     }
 
     public function destroy(Event $event)

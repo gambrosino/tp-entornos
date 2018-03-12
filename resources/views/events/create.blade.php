@@ -4,7 +4,7 @@
 
 	<div class="columns is-centered">
 		<div class="column is-half">
-			@component('events.partials.form')
+			@component('events.partials.form', ['event' => $event])
 				@slot('title')
 					Crear un nuevo evento
 				@endslot

@@ -43,7 +43,7 @@
 							<td>{{ $event->getAttendantsCount() }}</td>
 							<td class="level">
 								<div class="level-left">
-									<a href="#" class="level-item button is-small is-outlined is-black">
+									<a href="{{ route('events.edit', ['event' => $event->id]) }}" class="level-item button is-small is-outlined is-black">
 										Editar
 									</a>
 									<a href="#" class="level-item button is-small is-outlined is-success">

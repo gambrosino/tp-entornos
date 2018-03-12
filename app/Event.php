@@ -14,7 +14,8 @@ class Event extends Model
         'description',
         'place',
         'address',
-        'date_time'];
+        'date_time'
+    ];
 
     public function getDateTimeAttribute($value)
     {

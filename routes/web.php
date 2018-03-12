@@ -23,6 +23,10 @@ Route::post('/eventos/crear', 'EventController@store')->name('events.store');
 
 Route::get('/eventos/{event}', 'EventController@show')->name('events.show');
 
+Route::get('/eventos/{event}/edit', 'EventController@edit')->name('events.edit');
+
+Route::patch('/eventos/{event}/update', 'EventController@update')->name('events.update');
+
 Route::delete('/eventos/{event}', 'EventController@destroy')->name('events.destroy');
 
 Route::post('/attendants', 'AttendantController@store')->name('attendants.store');
