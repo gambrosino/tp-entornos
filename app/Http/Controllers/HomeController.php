@@ -24,7 +24,7 @@ class HomeController extends Controller
     public function index()
     {
         $user = auth()->user();
-        $events = $user->events;
+        $events = $user->events()->paginate(10);
         return view('admin.home', compact('events'));
     }
 }
